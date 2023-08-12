@@ -4,6 +4,8 @@ Grid Placement
 Questions
 Alt text
 Background image and color
-
+naming classes
+background color on the annual plan
 
 grid area: 2/2/
+mm

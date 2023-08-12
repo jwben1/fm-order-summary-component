@@ -4,7 +4,8 @@
 #####################################################
 *.sketch
 *.fig
-*.txt
+
+ measure.txt
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
