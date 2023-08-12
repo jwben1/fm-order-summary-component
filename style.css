@@ -4,7 +4,13 @@
   --clr-300: hsl(225, 100%, 94%);
   --clr-400: hsl(225, 100%, 98%);
   --clr-900: hsl(245, 75%, 52%);
-  
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-xbold: 900;
+
+  --spacer: 1rem;
+  --spacer-md: calc(var(--spacer) *2);
 }
 
 
@@ -51,36 +57,78 @@
 
   body {
     font-family: 'Red Hat Display', sans-serif;
+    color: var(--clr-200);
     background: url(images/pattern-background-mobile.svg);
     background-color: var(--clr-300);
     min-height: 100vh;
     display: grid;
     place-content: center; 
   }
-  .flex-group {
+
+  .card__header {
+    color: var(--clr-100);
+  }
+
+  .grid-group {
+    margin-top: 1rem;
+    background-color: var(--clr-300);
+    border-radius: 7px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-column: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 1rem;
+  }
+
+  .card__icon {
+    grid-row: span 2;
+  }
+
+  .card__price {
+    grid-area: 2/2;
+  }
+
+  a {
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: var(--fw-bold);
+    color: var(--clr-900);
+  }
+
+  .card__plan {
+    color: var(--clr-100);
+    font-weight: var(--fw-xbold);
   }
   
   .card {
-    max-width: 22.25rem;
+    max-width: 21.25rem;
     background-color: var(--clr-400);
     border-radius: 23px;
     overflow: hidden;
   }
+
   .card__content {
     display: grid;
-    padding: 2rem;
+    padding: var(--spacer-md);
     text-align: center;
+    gap: 1rem;
   }
+
   .btn {
     background-color: var(--clr-900);
     color: white;
     border: none;
-    padding: 13px 2px;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
   }
   
+  .card__cancel {
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+  }
   
 
 
