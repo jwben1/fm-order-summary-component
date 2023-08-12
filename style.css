@@ -60,6 +60,7 @@
     color: var(--clr-200);
     background: url(images/pattern-background-mobile.svg);
     background-color: var(--clr-300);
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: grid;
     place-content: center; 
@@ -71,16 +72,19 @@
 
   .grid-group {
     margin-top: 1rem;
-    background-color: var(--clr-300);
-    border-radius: 7px;
+    background-color: var(--clr-400);
+    border-radius: 0.75rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 1rem;
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
   }
 
   .card__icon {
     grid-row: span 2;
+    padding-left: 0.938rem;
   }
 
   .card__price {
@@ -95,6 +99,7 @@
     font-size: small;
     font-weight: var(--fw-bold);
     color: var(--clr-900);
+    padding-left: 1.563rem;
   }
 
   .card__plan {
@@ -104,12 +109,12 @@
   
   .card {
     max-width: 21.25rem;
-    background-color: var(--clr-400);
-    border-radius: 23px;
+    border-radius: 1.563rem;
     overflow: hidden;
   }
 
   .card__content {
+    background-color: white;
     display: grid;
     padding: var(--spacer-md);
     text-align: center;
@@ -120,8 +125,8 @@
     background-color: var(--clr-900);
     color: white;
     border: none;
-    padding: 13px;
-    border-radius: 8px;
+    padding: 0.938rem;
+    border-radius: 0.625rem;
     cursor: pointer;
   }
   
