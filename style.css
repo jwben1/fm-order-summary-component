@@ -3,8 +3,9 @@
   --clr-200: hsl(224, 23%, 55%);
   --clr-300: hsl(225, 100%, 94%);
   --clr-400: hsl(225, 100%, 98%);
+  --clr-800: hsl(224, 50%, 60%);
   --clr-900: hsl(245, 75%, 52%);
-
+  
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-xbold: 900;
@@ -71,13 +72,13 @@
   }
 
   .grid-group {
-    margin-top: 1rem;
+    margin-top: var(--spacer);
     background-color: var(--clr-400);
     border-radius: 0.75rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacer);
     padding-top: 0.938rem;
     padding-bottom: 0.938rem;
   }
@@ -100,6 +101,10 @@
     font-weight: var(--fw-bold);
     color: var(--clr-900);
     padding-left: 1.563rem;
+  }
+
+  a:hover {
+    color: var(--clr-800);
   }
 
   .card__plan {
@@ -130,6 +135,9 @@
     border-radius: 0.625rem;
     cursor: pointer;
   }
+  .btn:hover {
+    background-color: var(--clr-800);
+  }
   
   .card__cancel {
     font-weight: var(--fw-bold);
@@ -138,7 +146,18 @@
     border: none;
     cursor: pointer;
   }
-  
+
+  .card__cancel:hover {
+    color: var(--clr-100);
+  }
+
+  @media (min-width: 640px) {
+    body {
+      background: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-color: var(--clr-300);
+  }
+}
 
 
   /*
